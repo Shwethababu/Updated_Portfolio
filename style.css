@@ -1,0 +1,270 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+  }
+  
+  
+  header {
+    display: flex;
+    background-color: #333;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 1rem 2rem;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  header h1 span {
+    color: #f06;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #f06;
+  }
+  
+ 
+  main {
+    width: 100%;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+  
+  section {
+    width: 100%;
+    
+    
+    padding:2rem;
+    box-sizing: border-box;
+    background:linear-gradient(135deg,#f06,#4a90e2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center; 
+    overflow: hidden; 
+    
+  }
+  .about-item h1
+  {
+    text-align:center;
+  }
+  
+  
+  .home {
+    margin:0;
+    padding:0;
+    width: 100%;
+    max-width:100%; 
+    text-align: center;
+    
+    
+  }
+  
+  .info {
+    text-align: center;
+    margin-bottom: 2rem; 
+  }
+  
+  .info h1,
+  .info h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem; 
+  }
+  
+  .info h2 {
+    font-style: italic;
+  }
+  
+  .info p {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+  }
+  
+  .image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 2rem; 
+  }
+  
+  .photo {
+    display: block;
+    width: 100%;
+    max-width: 300px; 
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 1rem; 
+  }
+  
+  
+  .education-item {
+    width: 100%;
+    max-width: 800px; 
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    margin-bottom: 2rem; 
+    border-radius: 8px;
+  }
+  
+  .degree,
+  .pu,
+  .school {
+    margin-bottom: 1.5rem; 
+  }
+  
+  .degree h1,
+  .pu h1,
+  .school h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem; 
+  }
+  
+  .degree p,
+  .pu p,
+  .school p {
+    font-size: 1rem;
+  }
+  
+  
+  .skill {
+    width: 100%;
+    max-width: 800px; 
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .skill-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .skill-item li {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+ 
+  .contact-info {
+    width: 100%;
+    max-width: 800px; 
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-info h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-item img {
+    height: 30px; 
+    width: 30px; 
+    margin-right: 0.5rem; 
+  }
+  
+  .contact-item span {
+    font-size: 1.2rem;
+  }
+  
+  .contact-item span a {
+    text-decoration: none;
+    color: #333; 
+  }
+  
+  .contact-item span a:hover {
+    color: #f06; 
+  }
+  
+ 
+  @media (max-width: 1024px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+    }
+    nav ul {
+      flex-direction: column;
+    }
+    nav ul li {
+      margin: 0.5rem 0;
+    }
+    nav ul li a {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .home,
+    .info,
+    .image,
+    .education-item,
+    .skill,
+    .contact-info {
+      padding: 1rem;
+    }
+    
+    .photo {
+      margin-top: 0.5rem;
+    }
+    
+    section {
+      padding: 1.5rem;
+    }
+    
+    .contact-info {
+      padding: 0.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 1.5rem;
+    }
+    nav ul {
+      flex-direction: column;
+    }
+    nav ul li {
+      margin: 0.5rem 0;
+    }
+  }
+  
